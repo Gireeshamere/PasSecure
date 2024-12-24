@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "passecure_backend": {
+      "main": "src/passecure_backend/main.mo",
+      "type": "motoko"
+    },
+    "passecure_frontend": {
+      "dependencies": [
+        "passecure_backend"
+      ],
+      "source": [
+        "src/passecure_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "passecure_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
